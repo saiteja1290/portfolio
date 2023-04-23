@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Code New Roman';
+  src: url(Code\ New\ Roman.otf);
+}
+:root{
+  --back : #161616;
+  --font-text-family: '__Inter_5ec390', '__Inter_Fallback_5ec390';
+}
+*{
+  margin: 0px;
+}
+body{
+  background-color: var(--back);
+  color: #e0e0e0;
+  font-family: 'Code New Roman';
+}
+.navbar{
+  /* border: 1px solid white; */
+  display: flex;
+  font-size: 20px;
+  margin-left: 5%;
+}
+.name{
+  padding-right: 2rem;
+  padding-top: 3rem;
+  flex-basis: calc(100%/2);
+}
+.others{
+  padding: 3rem 2rem;
+  flex-grow: 1;
+}
+.name2{
+  font-size: 45px;
+  /* border: 1px solid white; */
+  margin-top: 14%;
+  margin-left: 5%;
+  margin-right: 50%;
+}
+.desp{
+  color: #5d5d5d;
+  margin-top: 25px;
+  margin-left: 5%;
+  margin-right: 50%;
+  font-size: 25px;
+  /* border: 1px solid white; */
+}
+.open{
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 5%;
+}
+a{
+  text-decoration: none;
+  color: #e0e0e0;
+}
+.btn{
+  font-family: 'Code New Roman';
+  font-size: 20px;
+  background-color: #5d5d5d;
+  color:#e0e0e0;
+  border-style:none;
+  border-radius: 10px;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #e0e0e0;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e0e0e0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
